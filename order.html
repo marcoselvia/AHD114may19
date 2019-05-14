@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body> 
+    <h1 align="center"> FORM ORDER </h1>
+    <br>
+    <br>
+    <br>
+    <div id="p2" align = "center" >
+    <form name='miFormulario' id='miFormulario'>
+
+    <label for="">PRODUCTO</label><input type="text" name="PRO" id="idPRO" maxlength="5">
+    <label for="">PRECIO Q</label><input type="text" name="codigo" id="idcodigo" maxlength="5">
+    <input type="submit" name="bot" value="Crear">
+    </form>
+    </div>
+    <script>
+    miFormulario = document.querySelector('#miFormulario');
+    miFormulario.codigo.addEventListener('keypress', function (e){
+    	if (!soloNumeros(event)){
+      	e.preventDefault();
+      }
+    })
+
+    //Solo permite introducir numeros.
+    function soloNumeros(e){
+        var key = e.charCode;
+        console.log(key);
+        return key >= 48 && key <= 57;
+    }
+    document.getElementById("p2").style.color = "blue";
+
+
+    </script>
+  </body>
+</html>
