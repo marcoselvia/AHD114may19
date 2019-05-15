@@ -1,0 +1,8 @@
+table {
+   width: 60%;
+  border: grey 5px solid;
+}
+th, td {
+   width: 20%;
+ border: grey 1px solid;
+}
