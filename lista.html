@@ -1,43 +1,63 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="stylesheet" type="text/css" href="/AHD114may19//CSS/style.css">
     <meta charset="utf-8">
     <title></title>
   </head>
   <body>
     <h1 align = "center">LISTA DE PRODUCTO</h1>
-    <div class = "ee" align="center">
-    <table >
+    <br>
+    <div id = "div1" align="center" >
+      <ul id="lista1">
+              <li>
+                  <a href="index.html">Ir a mas productos</a>
+              </li>
 
-    		<tr>
-    			<th>ID</th>
-    			<th>NOMBRE DEL PRODUCTO</th>
-    			<td>DESCRIPCION</td>
-    			<td>PRECIO</td>
-    		</tr>
-        <tr>
-          <td>1</td>
-          <td>MOUSE</td>
-          <td>ES INALAMBRICO</td>
-          <td>75</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>TECLADO</td>
-        <td>ES INALAMBRICO</td>
-        <td>75</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>CPU</td>
-      <td>MARCA DELL</td>
-      <td>100</td>
-  </tr>
+              <li>
+              <button><a href="order.html">Producto</a></button>
+              </li>
+          </ul>
+          <br>
+          <br>
+          <table id = "table" border="2px" align="center">
+          <tr>
+            <td><strong>ID</strong></td>
+            <td><strong>PRODUCTO</strong></td>
+            <td><strong>PRECIO</strong></td>
+          </tr>
 
-    </table>
+          <tr>
+            <td>01</td>
+            <td>mouse</td>
+            <td>50</td>
+          </tr>
+
+          <tr>
+            <td>02</td>
+            <td>cpu</td>
+            <td>50</td>
+          </tr>
+
+          <tr>
+            <td>03</td>
+            <td>teclado</td>
+            <td>100</td>
+          </tr>
+          </table>
 </div>
-<img src="IMAGENES../mouse.jpeg" width="400" height="300">
+<div>
+<img src="/AHD114may19/IMAGENES/mouse.jpeg" width="300" height="200">
 
+<img src="/AHD114may19/IMAGENES/teclado.jpg" width="300" height="200">
+
+<img src="/AHD114may19/IMAGENES/cpu.png" width="300" height="200">
+<br>
+<br>
+<a href="update.html"class="button is-primary">Update</a>
+<a href="delete.html"class="button is-link">Delete</a>
+</div>
   </body>
 </html>
